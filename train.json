@@ -1,0 +1,190 @@
+Train 10:
+
+{
+"instruct": "Identificar biomarcadores",
+"input": "cortisol e resposta ao blend personalizado",
+"output": "digraph {\n  node [shape=circle];\n  \"Níveis de Cortisol\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend Personalizado\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend personalizado e cortisol",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à blend personalizado e cortisol",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Níveis de Cortisol\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Níveis de Cortisol\" [label=\"Influencia (NCA)\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de microbiota e blend de ansiolíticos personalizados",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com microbiota e blend personalizado",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição da Microbiota\" -> \"Resposta ao Tratamento (Blend Personalizado)\" [label=\"PLS-SEM\"];\n  \"Composição da Microbiota\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "microbiota e resposta ao blend personalizado",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição da Microbiota\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend Personalizado\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend personalizado e microbiota",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à blend personalizado e microbiota",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Composição da Microbiota\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Composição da Microbiota\" [label=\"Influencia (NCA)\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de sono e blend de ansiolíticos personalizados",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com sono e blend personalizado",
+"output": "digraph {\n  node [shape=circle];\n  \"Qualidade do Sono\" -> \"Resposta ao Tratamento (Blend Personalizado)\" [label=\"PLS-SEM\"];\n  \"Qualidade do Sono\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "sono e resposta ao blend personalizado",
+"output": "digraph {\n  node [shape=circle];\n  \"Qualidade do Sono\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend Personalizado\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend personalizado e qualidade do sono",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n}"
+}
+
+
+Train 11:
+
+{
+"instruct": "Modelar resposta",
+"input": "atenção à blend personalizado e qualidade do sono",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Qualidade do Sono\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Qualidade do Sono\" [label=\"Influencia (NCA)\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar correlação",
+"input": "dados de motivação e blend de ansiolíticos personalizados",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Motivação\" [label=\"PLS-SEM\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Níveis de Motivação\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com motivação e blend personalizado",
+"output": "digraph {\n  node [shape=circle];\n  \"Níveis de Motivação\" -> \"Resposta ao Tratamento (Blend Personalizado)\" [label=\"PLS-SEM\"];\n  \"Níveis de Motivação\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "motivação e resposta ao blend personalizado",
+"output": "digraph {\n  node [shape=circle];\n  \"Níveis de Motivação\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend Personalizado\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend personalizado e níveis de motivação",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Níveis de Motivação\" [label=\"PLS-SEM\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Níveis de Motivação\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à blend personalizado e níveis de motivação",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend Personalizado\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Níveis de Motivação\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Níveis de Motivação\" [label=\"Influencia (NCA)\"];\n  \"Composição do Blend Personalizado\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar influência",
+"input": "cultivo personalizado em eye tracking e ECG",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com eye tracking, ECG e blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "eye tracking, ECG e resposta ao blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend, eye tracking e ECG",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à blend, eye tracking e ECG",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Atenção\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar influência",
+"input": "cultivo personalizado em eye tracking e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+}
+
+
+Train 12:
+
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com eye tracking, EDA e blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Condutância da Pele (EDA)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "eye tracking, EDA e resposta ao blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend, eye tracking e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à blend, eye tracking e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar influência",
+"input": "cultivo personalizado em eye tracking, ECG e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com eye tracking, ECG, EDA e blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Padrões de Eye Tracking\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Condutância da Pele (EDA)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "eye tracking, ECG, EDA e resposta ao blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Padrões de Eye Tracking\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\"];\n}"
+}
+{
+"instruct": "Avaliar eficácia",
+"input": "tratamento com blend, eye tracking, ECG e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Modelar resposta",
+"input": "atenção à blend, eye tracking, ECG e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Composição do Blend\" -> \"Atenção\" [label=\"Modula (PLS-SEM)\"];\n  \"Atenção\" -> \"Padrões de Eye Tracking\" [label=\"PLS-SEM\"];\n  \"Atenção\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Atenção\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Ansiedade\" -> \"Padrões de Eye Tracking\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Reduz (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Analisar influência",
+"input": "cultivo personalizado em EEG, ECG e EDA",
+"output": "digraph {\n  node [shape=circle];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Padrões de EEG\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Condutância da Pele (EDA)\" [label=\"PLS-SEM\"];\n  \"Parâmetros de Cultivo Personalizado\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Ansiedade\" -> \"Padrões de EEG\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Variabilidade da Frequência Cardíaca (ECG)\" [label=\"Influencia (NCA)\"];\n  \"Ansiedade\" -> \"Condutância da Pele (EDA)\" [label=\"Influencia (NCA)\"];\n}"
+}
+{
+"instruct": "Prever resposta",
+"input": "ao tratamento com EEG, ECG, EDA e blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Resposta ao Tratamento (Blend)\" [label=\"PLS-SEM\"];\n  \"Padrões de EEG\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Condutância da Pele (EDA)\" -> \"Ansiedade\" [label=\"NCA\"];\n  \"Composição do Blend\" -> \"Ansiedade\" [label=\"Modula (PLS-SEM)\"];\n}"
+}
+{
+"instruct": "Identificar biomarcadores",
+"input": "EEG, ECG, EDA e resposta ao blend",
+"output": "digraph {\n  node [shape=circle];\n  \"Padrões de EEG\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Variabilidade da Frequência Cardíaca (ECG)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Condutância da Pele (EDA)\" -> \"Biomarcadores\" [label=\"PLS-SEM\"];\n  \"Biomarcadores\" -> \"Resposta ao Blend\" [label=\"Predizem\"];\n}"
+}
